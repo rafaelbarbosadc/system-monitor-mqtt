@@ -21,4 +21,4 @@ client.loop_start()
 while(True):
   monitor = subprocess.check_output(['sh', 'monitor.sh'])
   client.publish("dse/monitor", monitor)
-  sleep(2)
+  sleep(8)
